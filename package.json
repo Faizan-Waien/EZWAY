@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://faizan-waien.github.io/ezway/#",
+  "homepage": "https://faizan-waien.github.io/ezway/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
