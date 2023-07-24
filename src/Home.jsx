@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchProducts } from "./Store/Slice/productSlice"
 import { useNavigate } from "react-router-dom"
-import ImgSlider from "./imgSlider"
+import ImgSlider from "./ImgSlider"
 import { STATUS } from "./Store/Slice/productSlice"
 import Row from "./Row"
 import fragrance from '/src/assets/perfume.jpg'
