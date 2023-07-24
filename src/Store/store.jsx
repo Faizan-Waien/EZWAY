@@ -4,7 +4,7 @@ import productSlice from './Slice/productSlice'
 import singleProductSlice from './Slice/singleProductSlice'
 import categoriesSlice from './Slice/categoriesSlice'
 import singleCategorySlice from './Slice/singleCategorySlice'
-import SearchSlice from './Slice/SearchSlice'
+import searchSlice from './Slice/searchSlice'
 
 const store = configureStore({
 
@@ -14,7 +14,7 @@ const store = configureStore({
         singleProduct: singleProductSlice,
         categories: categoriesSlice,
         singleCategory: singleCategorySlice,
-        search: SearchSlice,
+        search: searchSlice,
     }
 })
 
