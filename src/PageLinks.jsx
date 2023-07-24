@@ -38,7 +38,7 @@ const PageLinks = () => {
 
         </Route>
 
-        <Route exact path='/' Component={SignUp} />
+        <Route exact path='/ezway' Component={SignUp} />
 
       </Routes>
     </div>
