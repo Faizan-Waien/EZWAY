@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
 import { fetchSearch } from './Store/Slice/SearchSlice';
 import { STATUS } from "./Store/Slice/productSlice"
 import DehazeIcon from '@mui/icons-material/Dehaze'
+import logo from '/src/assets/logo.png'
 
 const Header = () => {
 
@@ -51,7 +52,7 @@ const Header = () => {
             <div className='headerul'>
 
                 <div className='left'>
-                    <div className='limg'><Link to='/home'><img src='/src/assets/logo.png'></img></Link></div>
+                    <div className='limg'><Link to='/home'><img src={logo}></img></Link></div>
                 </div>
 
                 <div className='right'>

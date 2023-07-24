@@ -6,6 +6,16 @@ import { useNavigate } from "react-router-dom"
 import ImgSlider from "./imgSlider"
 import { STATUS } from "./Store/Slice/productSlice"
 import Row from "./Row"
+import fragrance from '/src/assets/perfume.jpg'
+import bags from '/src/assets/bags.jpg'
+import skincare from '/src/assets/skincare.jpg'
+import dress from'/src/assets/dress.jpg'
+import shoes from'/src/assets/shoes.jpg'
+import glasses from'/src/assets/glasses.jpg'
+import jewellery from'/src/assets/jewellery.jpg'
+import laptop from '/src/assets/laptop.jpg'
+import phone from'/src/assets/phones.jpg'
+import bike from '/src/assets/bike.jpg'
 
 const Home = () => {
 
@@ -53,17 +63,17 @@ const Home = () => {
           <div style={{ display: 'flex' }}>
 
             <div className='gr'>
-              <img src='/src/assets/perfume.jpg' onClick={() => navigate(`/category/fragrances`)} style={{ width: '22vw', height: '27vw' }} />
+              <img src={fragrance} onClick={() => navigate(`/category/fragrances`)} style={{ width: '22vw', height: '27vw' }} />
               <span>FRAGRANCES</span>
             </div>
 
             <div className='gr'>
-              <img src='/src/assets/bags.jpg' onClick={() => navigate(`/category/womens-bags`)} style={{ width: '22vw', height: '27vw' }} />
+              <img src={bags} onClick={() => navigate(`/category/womens-bags`)} style={{ width: '22vw', height: '27vw' }} />
               <span>BAGS</span>
             </div>
 
             <div className='gr'>
-              <img src='/src/assets/skincare.jpg' onClick={() => navigate(`/category/skincare`)} style={{ width: '22vw', height: '27vw' }} />
+              <img src={skincare} onClick={() => navigate(`/category/skincare`)} style={{ width: '22vw', height: '27vw' }} />
               <span>SKIN CARE</span>
             </div>
 
@@ -72,22 +82,22 @@ const Home = () => {
           <div style={{ display: 'flex' }}>
 
             <div className='gr'>
-              <img src='/src/assets/dress.jpg' onClick={() => navigate(`/category/womens-dresses`)} style={{ width: '20vw', height: '24vw' }} />
+              <img src={dress} onClick={() => navigate(`/category/womens-dresses`)} style={{ width: '20vw', height: '24vw' }} />
               <span>DRESSES</span>
             </div>
 
             <div className='gr'>
-              <img src='/src/assets/shoes.jpg' onClick={() => navigate(`/category/womens-shoes`)} style={{ width: '20vw', height: '24vw' }} />
+              <img src={shoes} onClick={() => navigate(`/category/womens-shoes`)} style={{ width: '20vw', height: '24vw' }} />
               <span>SHOES</span>
             </div>
 
             <div className='gr'>
-              <img src='/src/assets/glasses.jpg' onClick={() => navigate(`/category/womens-dresses`)} style={{ width: '20vw', height: '24vw' }} />
+              <img src={glasses} onClick={() => navigate(`/category/sunglasses`)} style={{ width: '20vw', height: '24vw' }} />
               <span>GLASSES</span>
             </div>
 
             <div className='gr'>
-              <img src='/src/assets/jewelry.jpg' onClick={() => navigate(`/category/womens-jewellery`)} style={{ width: '20vw', height: '24vw' }} />
+              <img src={jewellery} onClick={() => navigate(`/category/womens-jewellery`)} style={{ width: '20vw', height: '24vw' }} />
               <span>JEWELLERY</span>
             </div>
 
@@ -101,17 +111,17 @@ const Home = () => {
           <div style={{ display: 'flex' }}>
 
             <div className='gr'>
-              <img src='/src/assets/laptop.jpg' onClick={() => navigate(`/category/laptops`)} style={{ width: '30vw' }} />
+              <img src={laptop} onClick={() => navigate(`/category/laptops`)} style={{ width: '30vw' }} />
               <span>LAPTOPS</span>
             </div>
 
             <div className='gr'>
-              <img src='/src/assets/phones.jpg' onClick={() => navigate(`/category/smartphones`)} style={{ width: '30vw' }} />
+              <img src={phone} onClick={() => navigate(`/category/smartphones`)} style={{ width: '30vw' }} />
               <span>SMART PHONES</span>
             </div>
 
             <div className='gr'>
-              <img src='/src/assets/bike.jpg' onClick={() => navigate(`/category/motorcycle`)} style={{ width: '30vw' }} />
+              <img src={bike} onClick={() => navigate(`/category/motorcycle`)} style={{ width: '30vw' }} />
               <span>MOTOR BIKES</span>
             </div>
 

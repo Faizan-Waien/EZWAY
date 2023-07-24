@@ -2,27 +2,21 @@ import React from 'react'
 import './Footer.css'
 
 const Footer = () => {
-  return (  
-  <div className="footer">
+  return (
+    <div className="footer">
 
-    <div className="row">
-        <img src="/src/assets/sm.png"/>
-    </div>
+      <div className="row">
+        <li><a>Contact us</a></li>
+        <li><a>Our Services</a></li>
+        <li><a>Privacy Policy</a></li>
+        <li><a>Terms & Conditions</a></li>
+        <li><a>Career</a></li>
+      </div>
 
-    <div className="row">
-        
-            <li><a>Contact us</a></li>
-            <li><a>Our Services</a></li>
-            <li><a>Privacy Policy</a></li>
-            <li><a>Terms & Conditions</a></li>
-            <li><a>Career</a></li>
-        
+      <div className="row">
+        Copyright © 2023 - All rights reserved
+      </div>
     </div>
-
-    <div className="row">
-         Copyright © 2023 - All rights reserved
-    </div>
-</div>
   )
 }
 

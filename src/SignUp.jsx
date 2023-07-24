@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import bg from '/src/assets/main.jpg'
 
 const SignUp = () => {
 
@@ -56,7 +57,7 @@ const SignUp = () => {
 
   return (
 
-    <div style={{ background: 'url(/src/assets/main.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', width: '100vw', height: '100vh', position: 'fixed' }}>
+    <div style={{ background: `url(${bg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', width: '100vw', height: '100vh', position: 'fixed' }}>
 
       <div className='form'>
 
