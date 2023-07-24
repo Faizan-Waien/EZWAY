@@ -6,7 +6,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchIcon from '@mui/icons-material/Search'
 import { Badge } from '@mui/material'
 import { useState, useEffect } from 'react';
-import { fetchSearch } from './Store/Slice/SearchSlice';
+import { fetchSearch } from './Store/Slice/searchSlice';
 import { STATUS } from "./Store/Slice/productSlice"
 import DehazeIcon from '@mui/icons-material/Dehaze'
 import logo from '/src/assets/logo.png'
