@@ -1,0 +1,84 @@
+.dropBTN {
+    display: flex;
+    align-items: center;
+    background-color: rgb(33, 49, 70);
+    color: white;
+    border-bottom-right-radius: 50px;
+    padding: 0px 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.drop {
+    position: relative;
+    width: fit-content;
+}
+
+.drop span {
+    font-size: 1vw;
+    /* padding: 0px 5px; */
+}
+
+.drop:hover .cat {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop .cat {
+    display: none;
+    list-style-type: none;
+    background: rgb(232, 227, 227);
+    width: 130px;
+    z-index: 999;
+    position: absolute;
+    /* padding: 10px 10px; */
+}
+
+.drop .cat span {
+    padding: 0px 0px;
+    font-size: small;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+.drop .cat span:hover {
+    color: white;
+    background-color: rgb(93, 120, 157);
+}
+
+.grace {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.gr {
+    display: flex;
+    position: relative;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.gr img {
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.gr span {
+    position: absolute;
+    top: 75%;
+    font-size: 2vw;
+    color: white;
+    background: rgba(0, 0, 0, 0.188);
+    width: 100%;
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+
+.gr:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}

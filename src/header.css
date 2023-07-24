@@ -1,0 +1,247 @@
+/* Header */
+.nag {
+  width: 100%;
+  height: auto;
+  /* position: fixed; */
+  /* z-index: 999; */
+  background: whitesmoke;
+}
+
+.nav{
+width: 100%;
+height: auto;
+position: fixed;
+z-index: 999;
+background: rgb(12, 27, 46);
+opacity: 90%;
+}
+
+.headerul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  border-bottom: 1px solid black;
+}
+
+.left{
+display: flex;
+width: 230px;
+}
+
+.left .limg {
+  width: 100%;
+}
+
+.limg img {
+  width: 100%;
+  height: auto;
+}
+
+.center {
+  /* flex: 60%; */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(33, 49, 70);
+  /* justify-content: space-between; */
+}
+
+.csu {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  justify-content: space-around;
+  cursor: pointer;
+  margin: auto;
+}
+
+.aL a {
+  display: flex;
+  /* background-color: rgba(245, 245, 245, 0.508); */
+  /* border-bottom-left-radius: 25px; */
+  padding: 5px 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 1vw;
+  align-items: center;
+
+}
+
+.aL a:hover {
+  background-color: rgb(12, 27, 46);
+  color: rgb(214, 208, 208);
+}
+
+.inp {
+  display: flex;
+  align-items: center;
+  /* background: rgba(242, 238, 238, 0.7); */
+  height: 30px;
+  width: 160px;
+  /* border-radius: 25px; */
+  margin: 10px 10px;
+  position: relative;
+}
+
+.inp input {
+  height: 100%;
+  width: 100%;
+  border: transparent;
+  color: black;
+  background-color: transparent;
+  border-bottom: solid 1px grey;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.inp .Sicon {
+  background-color: transparent;
+  border: transparent;
+  padding: 0px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.inp .Sicon:hover {
+  background: rgb(150, 167, 189);
+  border-radius: 50px;
+}
+
+.sear {
+  position: absolute;
+  top: 35px;
+  background: rgb(194, 208, 226);
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  z-index: 999;
+}
+
+.ss {
+  padding: 0px 10px;
+  cursor: pointer;
+  font-size: large;
+  text-transform: capitalize;
+}
+
+.ss:hover {
+  background-color: rgb(150, 167, 189);
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lucida Sans';
+}
+
+.rsh {
+  display: flex;
+  flex-direction: row;
+}
+
+.aR {
+  display: block;
+  color: rgb(33, 49, 70);
+  height: 20px;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.aR2 {
+  display: block;
+  color: rgb(255, 255, 255);
+  height: 20px;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.aR :hover {
+  color: rgb(150, 167, 189);
+}
+
+.aR2 :hover {
+  color: rgb(150, 167, 189);
+}
+
+.rite {
+  display: none;
+  position: relative;
+  color: rgb(12, 27, 46);
+  padding: 7px 5px;
+}
+
+.op {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(33, 49, 70);
+  width: 135px;
+  position: absolute;
+  right: 0px;
+  top: -260px;
+  height: fit-content;
+  transition: top 0.5s ease-in-out;
+  z-index: 999;
+}
+
+.op a {
+  text-decoration: none;
+  display: flex;
+  color: white;
+  padding: 20px 20px;
+  align-items: center;
+  gap: 5px;
+}
+
+.op a:hover {
+  background-color: rgb(12, 27, 46);
+}
+
+.rite:hover .op {
+  top: 0;
+}
+
+.drop1{
+  position: relative;
+  width: fit-content;
+}
+
+.drop1 .cat1{
+  display: none;
+  list-style-type: none;
+  background: rgb(232, 227, 227);
+  width: 130px;
+  height: fit-content;
+  z-index: 999;
+  position: absolute;
+}
+
+.drop1:hover .cat1{
+  display: flex;
+  flex-direction: column;
+}
+
+.drop1 .cat1 span{
+  padding: 0px 0px;
+  font-size: small;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+
+.drop1 .cat1 span:hover{
+  color: white;
+  background-color: rgb(93, 120, 157);
+}
