@@ -5,6 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { fetchSingleCategory } from './Store/Slice/singleCategorySlice'
 import { addProduct } from './Store/Slice/cartSlice'
 import { STATUS } from './Store/Slice/productSlice'
+import { Pagination, Stack } from '@mui/material'
 
 const CatSection = () => {
 
@@ -71,6 +72,13 @@ const CatSection = () => {
                     )
                 })}
             </div>
+
+            <div style={{ margin: 'auto', padding: '50px 0px' }}>
+                <Stack spacing={2}>
+                    <Pagination count={4} color="primary" showFirstButton showLastButton disabled />
+                </Stack>
+            </div>
+
         </div>
     )
 }

@@ -81,7 +81,7 @@ const goCart = () => {
                 </div>
 
                 <div style={{ position: 'absolute', right: 0, top: 0}}>
-                  <button style={{ width: 20, height: 20, background: "maroon" }} onClick={() => dispatch(removeProduct(curElem.id))}>x</button>
+                  <button style={{ width: 20, height: 20, background: "maroon",cursor:"pointer" }} onClick={() => dispatch(removeProduct(curElem.id))}>x</button>
                 </div>
 
               </div>

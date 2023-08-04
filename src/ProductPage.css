@@ -83,7 +83,8 @@
     background: rgb(33, 49, 70);
     color: white;
     padding: 5px 20px;
-    margin:0px 0px
+    margin:0px;
+    border-radius: 10px;
 }
 
 .dis {
@@ -107,6 +108,7 @@
     background: rgb(33, 49, 70);
     border-radius: 25px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .bbt:hover {

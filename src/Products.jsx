@@ -4,10 +4,16 @@ import { useDispatch, useSelector } from "react-redux"
 import { fetchProducts } from "./Store/Slice/productSlice"
 import { STATUS } from "./Store/Slice/productSlice"
 import { useNavigate } from "react-router-dom"
+import { Pagination } from '@mui/material'
+import { Stack } from '@mui/material'
 
 const Products = () => {
 
   const [page, setPage] = useState(0)
+
+  const handleChange = (event, value) => {
+    setPage((value - 1) * 25);
+  }
 
   let limit = 25
 
@@ -73,11 +79,17 @@ const Products = () => {
         })}
       </div>
 
-      <div className="pagin">
+      {/* <div className="pagin">
         <button onClick={() => setPage(0)}>1</button>
         <button onClick={() => setPage(25)}>2</button>
         <button onClick={() => setPage(50)}>3</button>
         <button onClick={() => setPage(75)}>4</button>
+      </div> */}
+
+      <div style={{margin:'auto',padding:'50px 0px'}}>
+        <Stack spacing={2}>
+          <Pagination count={4} color="primary" showFirstButton showLastButton page={page / 25 + 1} onChange={handleChange} />
+        </Stack>
       </div>
 
     </div>
