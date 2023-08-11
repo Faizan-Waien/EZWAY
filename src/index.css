@@ -14,6 +14,29 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@media screen and (max-width: 1100px) {
+  .mmm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sidesub {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  
+  .sidebr {
+    margin: auto;
+  }
+
+  .t2 {
+    width: 97%;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 700px) {
 
   .f-main {
@@ -59,27 +82,6 @@
     width: 100%;
     height: fit-content;
     margin: auto;
-  }
-
-  .mmm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .sidesub {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-  }
-
-  .sidebr {
-    margin: auto;
-  }
-
-  .t2 {
-    width: 97%;
-    text-align: center;
   }
 
   .CartCont {

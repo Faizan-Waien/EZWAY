@@ -61,7 +61,7 @@ const ProductPage = () => {
                         </div>
 
                         <div className='suub'>
-                            {singleProduct?.images?.map((i, ind) => {
+                            {singleProduct?.images?.slice(0, 5).map((i, ind) => {
                                 return (
                                     <div className='ind' key={ind}>
                                         <img src={i} onClick={() => setPic(i)} />
