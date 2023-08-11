@@ -11,7 +11,7 @@ const row = ({ List, title }) => {
 
             <div className="sidesub">
 
-                {List.slice(0, 3).map((item, ind) => {
+                {List.slice(0, 4).map((item, ind) => {
 
                     return (
 

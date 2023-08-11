@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import bg from '/src/assets/main.jpg'
+import logo from '/src/assets/logo.png'
 
 const SignUp = () => {
 
@@ -30,7 +30,7 @@ const SignUp = () => {
       setAlert('')
     }, 1000);
   }
-  
+
   // -------------------------------------
 
   const [login, setLogin] = useState({
@@ -57,7 +57,9 @@ const SignUp = () => {
 
   return (
 
-    <div style={{ background: `url(${bg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', width: '100vw', height: '100vh', position: 'fixed' }}>
+    <div className='f-main'>
+
+      <img src={logo}/>
 
       <div className='form'>
 
@@ -81,7 +83,7 @@ const SignUp = () => {
 
           {alert && <p style={{ margin: 0, color: 'white', fontSize: 'small' }}>{alert}</p>}
 
-          <p style={{ color: 'gray', textAlign: 'right', fontSize: 'small' }}>Already registered?
+          <p style={{ color: 'white', textAlign: 'right', fontSize: 'small' }}>Already registered?
             <span onClick={() => { document.getElementById('sin').style.display = 'block'; document.getElementById('sup').style.display = 'none' }}> SignIn</span></p>
 
         </div>
@@ -100,7 +102,7 @@ const SignUp = () => {
 
           {alert && <p style={{ margin: 0, color: 'white', fontSize: 'small' }}>{alert}</p>}
 
-          <p style={{ color: 'gray', textAlign: 'right', fontSize: 'small' }}>Not registered?
+          <p style={{ color: 'white', textAlign: 'right', fontSize: 'small' }}>Not registered?
             <span onClick={() => { document.getElementById('sup').style.display = 'block'; document.getElementById('sin').style.display = 'none' }}> SignUp</span></p>
 
         </div>

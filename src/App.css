@@ -23,6 +23,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
+  justify-content: center;
 }
 
 .ProCont {
@@ -33,7 +34,7 @@ body {
   background: whitesmoke;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px 8px;
+  margin: 20px 25px;
   position: relative;
 }
 
@@ -121,11 +122,13 @@ body {
   height: fit-content;
   margin: auto;
   border-radius: 25px;
+  box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
 .CartCont {
   background-color: white;
   color: rgba(38, 41, 42, 0.634);
+  box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.5);
   margin: 10px 0px;
   height: 150px;
   display: flex;
@@ -134,22 +137,38 @@ body {
 }
 
 /* Form */
+
+.f-main {
+  background-image: url(/src/assets/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.f-main img {
+  width: 600px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  background-color: #0000005a;
+  background-color: #00000080;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 200px 1050px;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
+  width: 270px;
   height: fit-content;
+  position: absolute;
+  top: 25%;
+  left: 10%;
 }
 
 .form h2 {
   margin: 0;
-  border-bottom: 3px solid #435561;
-  color: #435561;
+  border-bottom: 3px solid #a1b9b7;
+  color: #a1b9b7;
 }
 
 .form span {
@@ -162,19 +181,21 @@ body {
 }
 
 .form input {
-  background-color: #0000005a;
+  background-color: #000000a7;
   color: white;
-  width: 275px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 10px;
   margin: 10px 0px;
-  border: transparent;
+  border: transparent
 }
 
 .form button {
   border: none;
   padding: 5px;
-  color: rgb(195, 186, 186);
-  background-color: #435561;
+  color: black;
+  font-weight: bold;
+  background-color: #a1b9b7;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -183,16 +204,14 @@ body {
 }
 
 .form button:hover {
-  background: #1f1f1f;
+  background: #3b515e;
 }
 
 /* Title */
 .ti {
   border-bottom: 1px solid black;
-  padding: 0px 20px;
-  font-size: 2vw;
   font-family: 'Lucida Sans';
-  padding: 0 50px;
+  padding: 0 20px;
   text-transform: uppercase;
 }
 
@@ -241,11 +260,13 @@ body {
   align-items: center;
   padding: 5px 5px;
   border-radius: 25px;
+  box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
 .sidesub {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .t2 {
@@ -256,7 +277,6 @@ body {
   border-start-end-radius: 25px;
   border-start-start-radius: 25px;
   margin: 0px;
-  animation: blink 2s linear infinite;
 }
 
 .pagin {
@@ -298,19 +318,5 @@ body {
 
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: .5;
-  }
-
-  100% {
-    opacity: 1;
   }
 }

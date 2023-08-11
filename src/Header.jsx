@@ -10,6 +10,8 @@ import { fetchSearch } from './Store/Slice/searchSlice';
 import { STATUS } from "./Store/Slice/productSlice"
 import DehazeIcon from '@mui/icons-material/Dehaze'
 import logo from '/src/assets/logo.png'
+import InfoIcon from '@mui/icons-material/Info';
+import CategoryIcon from '@mui/icons-material/Category';
 
 const Header = () => {
 
@@ -61,7 +63,7 @@ const Header = () => {
                         <form onSubmit={(e) => e.preventDefault()}>
                             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                 <div className='cin'><input placeholder='Search' type='text' value={query} onChange={(e) => setQuery(e.target.value)} onFocus={() => setFocus(true)} onBlur={() => setTimeout(() => setFocus(false), 300)} /></div>
-                                <div className='bin'><button type='submit' className='Sicon' style={{color: isScrolled ? 'white' : '#213146'}}><SearchIcon style={{ width: '25px', height: '25px'}} /></button></div>
+                                <div className='bin'><button type='submit' className='Sicon' style={{ color: isScrolled ? 'white' : '#213146' }}><SearchIcon style={{ width: '25px', height: '25px' }} /></button></div>
                             </div>
                         </form>
 
@@ -85,14 +87,14 @@ const Header = () => {
 
                     <div className='rite'>
                         <div>
-                            <DehazeIcon style={{ width: 30, height: 30,transition: '0.5s' ,color: isScrolled ? 'white' : '#213146'}} />
+                            <DehazeIcon style={{ width: 30, height: 30, transition: '0.5s', color: isScrolled ? 'white' : '#213146' }} />
                         </div>
 
                         <div className='op'>
                             <Link to='./Cart'><Badge color='primary' overlap="circular" badgeContent={getTotalQuantity() || 0}><ShoppingCartIcon /></Badge>Cart</Link>
-                            <Link to='/SignUp'><PersonIcon />SignIn</Link>
-                            <Link to="/AboutUs">AboutUS</Link>
-                            <Link to='/Products'>All Products</Link>
+                            <Link to='/'><PersonIcon />SignIn</Link>
+                            <Link to="/About Us"><InfoIcon />AboutUS</Link>
+                            <Link to='/Products'><CategoryIcon />All Products</Link>
                         </div>
                     </div>
                 </div>

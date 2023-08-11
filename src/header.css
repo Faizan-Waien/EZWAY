@@ -2,8 +2,6 @@
 .nag {
   width: 100%;
   height: auto;
-  /* position: fixed; */
-  /* z-index: 999; */
   background: whitesmoke;
 }
 
@@ -120,7 +118,8 @@ width: 230px;
 .sear {
   position: absolute;
   top: 35px;
-  background: rgb(194, 208, 226);
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.70);
   margin: auto;
   width: 100%;
   text-align: left;
@@ -128,10 +127,11 @@ width: 230px;
 }
 
 .ss {
-  padding: 0px 10px;
+  padding: 5px 10px;
   cursor: pointer;
-  font-size: large;
+  font-size: small;
   text-transform: capitalize;
+  border-bottom: 1px solid gray;
 }
 
 .ss:hover {
@@ -199,9 +199,10 @@ width: 230px;
   text-decoration: none;
   display: flex;
   color: white;
-  padding: 20px 20px;
+  padding: 10px;
   align-items: center;
   gap: 5px;
+  font-size: small
 }
 
 .op a:hover {

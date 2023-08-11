@@ -39,5 +39,6 @@ export default productSlice.reducer
 export const fetchProducts = createAsyncThunk('fetchProducts', async ({page, limit}) => {
     const res = await fetch(`https://dummyjson.com/products?limit=${limit}&skip=${page}`)
     const data = await res.json()
+    // console.log(data.products)
     return data.products
 })

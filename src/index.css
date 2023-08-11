@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #ffffff;
+  color: black;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,55 +15,80 @@
 }
 
 @media screen and (max-width: 700px) {
-  .smain {
-      display: flex;
-      flex-direction: column;
+
+  .f-main {
+    background-image: url(/src/assets/main2.jpg);
   }
-  .maiin{
-      width: 310px;
-      height: fit-content;
-      margin: auto;
+
+  .f-main img {
+    width: 350px;
   }
-  .ff{
-      width: 310px;
-      height: 260px;
+
+  .form {
+    top: 20%;
+    left: 5%;
   }
-  .ind{
-      width: 50px;
-      height: 50px;
-  }
-  .hv{
+
+  .hv {
     font-size: small;
   }
+
+  .smain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .maiin {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+  }
+
+  .ff {
+    width: 100%;
+    height: fit-content;
+    /* height: 260px; */
+  }
+
+  .ind {
+    width: 50px;
+    height: 50px;
+  }
+
   .innf {
-      width: 300px;
-      height: fit-content;
-      margin: auto;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
   }
-  .mmm{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin: auto;
+
+  .mmm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
+
   .sidesub {
-      display: grid;
-      grid-template-columns: auto auto;
-      margin: auto; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
   }
+
   .sidebr {
-      margin: auto;
+    margin: auto;
   }
-  .t2{
+
+  .t2 {
     width: 97%;
     text-align: center;
   }
+
   .CartCont {
-      flex-direction: column;
-      width: 100%;
-      height: fit-content;
-      text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
   }
+
   .rsh {
     display: none;
   }
@@ -75,56 +100,66 @@
   .left img {
     width: 150px;
   }
+
   .rem {
     display: none;
   }
-  .csu{
+
+  .csu {
     margin: 0px 0px;
   }
-  .drop a{
+
+  .drop a {
     font-size: 13px;
     padding: 5px 10px;
     padding-right: 60px;
   }
+
   .bt {
     display: none;
-    }
-    .ProCont {
-    width: 150px;
-    height: auto; 
-    }
-    .imd{
-    width:150px;
-    height:100px;
-    }
-    .dropBTN span{
-        display: none;
-    }
-    .dropBTN{
-        background-color: transparent;
-        color: rgb(33, 49, 70);
-    }
-    .ti{
-        font-size: 15px;
-    }
-    .tii{
-        font-size: 15px;
-    }
-    .map{
-        display: grid;
-        grid-template-columns: auto auto;
-        margin: auto;
-    }
-    .ct{
-        margin: auto;
-    }
-    .cin{
-        display: none;
-    }
-    .inp:hover .cin{
-        display: flex;
-    }
-    .footer .row li{
-      display:block;
-    }
+  }
+
+  .ProCont {
+    width: 140px;
+    height: auto;
+    margin: 5px;
+  }
+
+  .imd {
+    width: 140px;
+    height: 100px;
+  }
+
+  .dropBTN span {
+    display: none;
+  }
+
+  .dropBTN {
+    background-color: transparent;
+    color: rgb(33, 49, 70);
+  }
+
+  .ti {
+    font-size: 20px;
+  }
+
+  .tii {
+    font-size: 15px;
+  }
+
+  .ct {
+    margin: auto;
+  }
+
+  .cin {
+    display: none;
+  }
+
+  .inp:hover .cin {
+    display: flex;
+  }
+
+  .footer .row li {
+    display: block;
+  }
 }

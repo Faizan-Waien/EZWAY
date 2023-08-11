@@ -48,7 +48,7 @@ const ProductPage = () => {
     return (
         <div className='padding'>
 
-            <h2 className='ti'><span>{singleProduct.title}</span></h2>
+            {/* <h2 className='ti'><span>{singleProduct.title}</span></h2> */}
 
             <div className='mmm'>
 
@@ -96,29 +96,29 @@ const ProductPage = () => {
 
                         {cart.find((ite) => ite.id === singleProduct.id) ? cart.map((ite, ind) => ite.id === singleProduct.id ?
 
-                            <div key={ind} style={{display:'flex',flexDirection:'column',width:'fit-content'}}>
+                            <div key={ind} style={{ display: 'flex', flexDirection: 'column', width: 'fit-content' }}>
 
-                                <div style={{display:'flex',alignItems:'center',border:'1px solid black', width:'fit-content'}}>
-                                <button className='adc' onClick={() => dispatch(decrement(ite.id))} >-</button>
-                                <span style={{ width:50, textAlign:'center',fontWeight: 700}}>{ite.quantity}</span>
-                                <button className='adc' onClick={(ite.quantity >= ite.stock) ? null : () => dispatch(increment(ite.id))}>+</button>
+                                <div style={{ display: 'flex', alignItems: 'center', border: '1px solid black', width: 'fit-content' }}>
+                                    <button className='adc' onClick={() => dispatch(decrement(ite.id))} >-</button>
+                                    <span style={{ width: 50, textAlign: 'center', fontWeight: 700 }}>{ite.quantity}</span>
+                                    <button className='adc' onClick={(ite.quantity >= ite.stock) ? null : () => dispatch(increment(ite.id))}>+</button>
                                 </div>
-                               
+
                                 {(ite.stock - ite.quantity < 1) ? <p>Out of Stock</p> : <p>Only {(ite.stock - ite.quantity)} Items Left</p>}
 
                                 <button className='bbt' onClick={() => dispatch(navigate('/Cart'))}><span>PROCEED TO CART</span></button>
                             </div>
 
-                            : null 
+                            : null
 
                         ) :
-                            <div style={{display:'flex',flexDirection:'column',width:'fit-content'}}>
-                                <div style={{display:'flex',alignItems:'center',border:'1px solid black', width:'fit-content'}}>
+                            <div style={{ display: 'flex', flexDirection: 'column', width: 'fit-content' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', border: '1px solid black', width: 'fit-content' }}>
                                     <button className='adc'>-</button>
-                                    <span style={{ width:50, textAlign:'center' ,fontWeight: 700 }}>0</span>
+                                    <span style={{ width: 50, textAlign: 'center', fontWeight: 700 }}>0</span>
                                     <button className='adc' onClick={() => dispatch(addProduct(singleProduct))}>+</button>
                                 </div>
-                               <div><p>Only {singleProduct.stock} Items Left</p></div>
+                                <div><p>Only {singleProduct.stock} Items Left</p></div>
                             </div>
 
                         }
