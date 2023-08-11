@@ -73,7 +73,7 @@ const CatSection = () => {
                 })}
             </div>
 
-            <div style={{ margin: '0px auto',marginTop:'50px' }}>
+            <div style={{ margin: '50px auto' }}>
                 <Stack spacing={2}>
                     <Pagination count={4} color="primary" showFirstButton showLastButton disabled />
                 </Stack>

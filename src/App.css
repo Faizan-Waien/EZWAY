@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: fit-content;
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 /* Products Container */
