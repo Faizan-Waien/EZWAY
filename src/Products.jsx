@@ -86,7 +86,7 @@ const Products = () => {
         <button onClick={() => setPage(75)}>4</button>
       </div> */}
 
-      <div style={{margin:'50px auto'}}>
+      <div style={{margin:'0px auto', marginTop:'50px'}}>
         <Stack spacing={2}>
           <Pagination count={4} color="primary" size="medium" showFirstButton showLastButton page={page / 25 + 1} onChange={handleChange} />
         </Stack>
