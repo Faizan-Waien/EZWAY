@@ -59,13 +59,10 @@ width: 230px;
 
 .aL a {
   display: flex;
-  /* background-color: rgba(245, 245, 245, 0.508); */
-  /* border-bottom-left-radius: 25px; */
   padding: 5px 30px;
   color: white;
   text-decoration: none;
   transition: 0.5s;
-  font-size: 1vw;
   align-items: center;
 
 }
@@ -78,10 +75,8 @@ width: 230px;
 .inp {
   display: flex;
   align-items: center;
-  /* background: rgba(242, 238, 238, 0.7); */
   height: 30px;
   width: 160px;
-  /* border-radius: 25px; */
   margin: 10px 10px;
   position: relative;
 }

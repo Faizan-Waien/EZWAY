@@ -26,11 +26,11 @@ const PageLinks = () => {
 
           <Route exact path='/home' Component={() => <Home />} />
 
-          <Route exact path='/Products' Component={Products} />
+          <Route exact path='/products' Component={Products} />
 
-          <Route exact path='/AboutUs' Component={AboutUs} />
+          <Route exact path='/about' Component={AboutUs} />
 
-          <Route exact path='/Cart' Component={goCart} />
+          <Route exact path='/cart' Component={goCart} />
 
           <Route exact path='/product/:itemID' Component={ProductPage} />
 

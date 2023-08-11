@@ -31,7 +31,7 @@ const CatSection = () => {
 
     return (
 
-        <div className='padding'>
+        <div className='padding' style={{height:'100vh'}}>
 
             <h2 className='ti'><span>{catID.replace('-', ' ')}</span></h2>
 
@@ -73,7 +73,7 @@ const CatSection = () => {
                 })}
             </div>
 
-            <div style={{ margin: 'auto', padding: '50px 0px' }}>
+            <div style={{ margin: '50px auto' }}>
                 <Stack spacing={2}>
                     <Pagination count={4} color="primary" showFirstButton showLastButton disabled />
                 </Stack>

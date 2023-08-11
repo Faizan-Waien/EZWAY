@@ -14,11 +14,6 @@
     width: fit-content;
 }
 
-.drop span {
-    font-size: 1vw;
-    /* padding: 0px 5px; */
-}
-
 .drop:hover .cat {
     display: flex;
     flex-direction: column;

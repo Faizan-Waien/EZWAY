@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className='padding'>
 
-      <h1 className='ti'>AboutUs</h1>
+      <h1 className='ti'>About Us</h1>
    
    <div style={{display:'flex',margin:'0px 50px',width:'80%', padding:'10px', background:'whitesmoke'}}>
 

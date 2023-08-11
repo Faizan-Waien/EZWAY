@@ -80,7 +80,7 @@ const Header = () => {
                     </div>
 
                     <div className='rsh'>
-                        <Link to='./Cart' className={isScrolled ? 'aR2' : 'aR'}><Badge color='primary' overlap="circular" badgeContent={getTotalQuantity() || 0}><ShoppingCartIcon /></Badge></Link>
+                        <Link to='./cart' className={isScrolled ? 'aR2' : 'aR'}><Badge color='primary' overlap="circular" badgeContent={getTotalQuantity() || 0}><ShoppingCartIcon /></Badge></Link>
                         <Link to='/' className={isScrolled ? 'aR2' : 'aR'}><PersonIcon /></Link>
                     </div>
 
@@ -91,10 +91,10 @@ const Header = () => {
                         </div>
 
                         <div className='op'>
-                            <Link to='./Cart'><Badge color='primary' overlap="circular" badgeContent={getTotalQuantity() || 0}><ShoppingCartIcon /></Badge>Cart</Link>
+                            <Link to='./cart'><Badge color='primary' overlap="circular" badgeContent={getTotalQuantity() || 0}><ShoppingCartIcon /></Badge>Cart</Link>
                             <Link to='/'><PersonIcon />SignIn</Link>
-                            <Link to="/About Us"><InfoIcon />AboutUS</Link>
-                            <Link to='/Products'><CategoryIcon />All Products</Link>
+                            <Link to="/about"><InfoIcon />About US</Link>
+                            <Link to='/products'><CategoryIcon />All Products</Link>
                         </div>
                     </div>
                 </div>
@@ -187,11 +187,11 @@ const Header = () => {
                     </div>
 
                     <div className="rem">
-                        <span className='aL'><Link to='/Products'>All Products</Link></span>
+                        <span className='aL'><Link to='/products'>All Products</Link></span>
                     </div>
 
                     <div className="rem">
-                        <span className='aL'><Link to="/AboutUs">AboutUS</Link></span>
+                        <span className='aL'><Link to="/about">About US</Link></span>
                     </div>
                 </div>
 
